@@ -11,11 +11,6 @@ final class ContactsListViewController: UITableViewController {
 
     var person = Person.getPerson()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
